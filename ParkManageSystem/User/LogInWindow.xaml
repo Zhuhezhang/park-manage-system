@@ -1,0 +1,28 @@
+﻿<Window x:Class="User.LogInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:User"
+        mc:Ignorable="d"
+        Height="450" Width="800" BorderBrush="Black" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition  Height="*"/>
+            <RowDefinition  Height="250"/>
+            <RowDefinition  Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="账号" Grid.Row="1" Margin="10,55,233,155" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="57" Grid.Column="1" FontSize="14" RenderTransformOrigin="-0.105,0.525"/>
+        <Label Content="密码" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="37" Margin="10,100,234,113" Width="56" FontSize="14" RenderTransformOrigin="-0.018,0.459"/>
+        <TextBox x:Name="IDTextBox" Grid.Row="1" Grid.Column="1" BorderBrush="Black" VerticalContentAlignment="Center" Margin="67,55,10,166" FontSize="14"/>
+        <TextBox x:Name="PassWordTextBox" Grid.Row="1" Grid.Column="1" BorderBrush="Black" VerticalContentAlignment="Center" Margin="67,101,10,122" FontSize="14"/>
+        <Button Content="登录" x:Name="LogInButton" Grid.Row="1" Grid.Column="1" Margin="108,151,132,72" FontSize="14" Click="LogInButton_Click"/>
+        <Button Content="注册" x:Name="RegisteButton" Grid.Row="1" Grid.Column="1" Margin="189,151,50,72" FontSize="14" Click="RegisteButton_Click"/>
+    </Grid>
+</Window>
